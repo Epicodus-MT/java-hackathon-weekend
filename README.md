@@ -49,7 +49,6 @@ java-hackathon-weekend/
 * _Install gradle on your device_
 * _LOCAL: Go to Terminal_
 * _Clone this repository_
-* _Terminal command - 'gradle compileJava'_
 * _Terminal command - 'gradle run'_
 * _Open browser and go to 'localhost:4567'_
 
