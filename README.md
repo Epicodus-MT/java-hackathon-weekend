@@ -10,8 +10,8 @@ _Program has two classes: Team and Member. The homepage of the app lists all Tea
 ## Specifications
 
 * _Program displays details of the hack-a-thon_
-* _User can view all listed Team, and add a member to that team or create a new team.
-* _ Displays the updated information upon submission._
+* _User can view all listed Team, and add a member to that team or create a new team._
+* _Displays the updated information upon submission._
 * _Example:_
 
 |Behavior|Input|Output|
@@ -35,7 +35,7 @@ java-hackathon-weekend/
 |    |          |    |    └──bootstrap.css
 |    |          |    └──images/
 |    |          └──templates/
-|    |                └──layout.vtl
+|    |               └──layout.vtl
 |    └── test/
 │         └── java/
 |               └── Test.java
@@ -51,7 +51,7 @@ java-hackathon-weekend/
 * _Clone this repository_
 * _Terminal command - 'gradle compileJava'_
 * _Terminal command - 'gradle run'_
-* _Open browser and go to 'localhost:4567'
+* _Open browser and go to 'localhost:4567'_
 
 ## Known Bugs
 
