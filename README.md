@@ -16,7 +16,7 @@ _Program has two classes: Team and Member. The homepage of the app lists all Tea
 
 |Behavior|Input|Output|
 |---|---|---|
-|Epicodus - Add New Member|Mara Timberlake|Epicodus Team Members: Mara Timberlake, Kristine Culala and Megan Jones|
+|Epicodus - Add New Member|Walter White|Team Heisenberg: Walter White, Jesse Pinkman and Saul Goodman|
 
 ## What's included
 Within the repository you'll find the following directories and files:
