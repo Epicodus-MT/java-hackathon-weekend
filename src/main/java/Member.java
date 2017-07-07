@@ -4,14 +4,14 @@ import java.util.List;
 
 public class Member {
   private String mDescription;
-  private boolean mDeleted;
+  private boolean mCompleted;
   private LocalDateTime mCreatedAt;
   private static List<Member> instances = new ArrayList<Member>();
   private int mId;
 
   public Member(String description) {
     mDescription = description;
-    mDeleted = false;
+    mCompleted = false;
     mCreatedAt = LocalDateTime.now();
     instances.add(this);
     mId = instances.size();
@@ -21,8 +21,8 @@ public class Member {
     return mDescription;
   }
 
-  public boolean isDeleted() {
-    return mDeleted;
+  public boolean isCompleted() {
+    return mCompleted;
   }
 
   public LocalDateTime getCreatedAt() {

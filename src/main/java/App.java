@@ -32,7 +32,7 @@ public class App {
       Map<String, Object> model = new HashMap<String, Object>();
       String description = request.queryParams("description");
       Member newMember = new Member(description);
-      model.put("template", "templates/delete.vtl");
+      model.put("template", "templates/success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
@@ -54,7 +54,7 @@ public class App {
       Map<String, Object> model = new HashMap<String, Object>();
       String name = request.queryParams("name");
       Team newTeam = new Team(name);
-      model.put("template", "templates/team-delete.vtl");
+      model.put("template", "templates/team-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
@@ -88,7 +88,7 @@ public class App {
       Member newMember = new Member(description);
       team.addMember(newMember);
       model.put("team", team);
-      model.put("template", "templates/team-members-delete.vtl");
+      model.put("template", "templates/team-members-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
