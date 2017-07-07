@@ -6,10 +6,10 @@ public class Member {
   private String mDescription;
   private boolean mDeleted;
   private LocalDateTime mCreatedAt;
-  private static List<Task> instances = new ArrayList<Task>();
+  private static List<Member> instances = new ArrayList<Member>();
   private int mId;
 
-  public Task(String description) {
+  public Member(String description) {
     mDescription = description;
     mDeleted = false;
     mCreatedAt = LocalDateTime.now();
@@ -29,7 +29,7 @@ public class Member {
     return mCreatedAt;
   }
 
-  public static List<Task> all() {
+  public static List<Member> all() {
     return instances;
   }
 
@@ -41,7 +41,7 @@ public class Member {
     return mId;
   }
 
-  public static Task find(int id) {
+  public static Member find(int id) {
     return instances.get(id - 1);
   }
 }

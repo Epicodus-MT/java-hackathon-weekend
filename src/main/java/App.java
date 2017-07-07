@@ -23,7 +23,7 @@ public class App {
 
     get("/members", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
-      model.put("members", Task.all());
+      model.put("members", Member.all());
       model.put("template", "templates/members.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
@@ -53,7 +53,7 @@ public class App {
     post("/teams", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
       String name = request.queryParams("name");
-      Category newCategory = new Team(name);
+      Team newTeam = new Team(name);
       model.put("template", "templates/team-delete.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());

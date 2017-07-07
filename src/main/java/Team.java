@@ -11,7 +11,7 @@ public class Team {
     mName = name;
     instances.add(this);
     mId = instances.size();
-    mTasks = new ArrayList<Task>();
+    mMembers = new ArrayList<Member>();
   }
 
   public String getName() {
