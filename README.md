@@ -27,18 +27,29 @@ java-hackathon-weekend/
 │    └── main/
 │    │    └── java/
 |    │    │     └── App.java
+|    │    │     └── Member.java
+|    │    │     └── Team.java
 |    │    │     └── VelocityTemplateEngine.java
 |    |    └── resources/
 |    |          └──public/
-|    |          |    └──css/
-|    |          |    |    └──app.css
-|    |          |    |    └──bootstrap.css
-|    |          |    └──images/
+|    |          |    └──app.css
 |    |          └──templates/
+|    |               └──delete.vtl
+|    |               └──index.vtl
 |    |               └──layout.vtl
+|    |               └──member-form.vtl
+|    |               └──member.vtl
+|    |               └──members.vtl
+|    |               └──team-delete.vtl
+|    |               └──team-form.vtl
+|    |               └──team-members-delete.vtl
+|    |               └──team-members-form.vtl
+|    |               └──team.vtl
+|    |               └──teams.vtl
 |    └── test/
 │         └── java/
-|               └── Test.java
+|               └── MemberTest.java
+|               └── TeamTest.java
 ├── .gitignore
 ├── build.gradle
 └── README.md
