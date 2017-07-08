@@ -10,42 +10,42 @@ public class MemberTest {
   }
 
   @Test
-  public void Member_instantiatesCorrectly_true() {
+  public void Member_instantiatesCorrectly() {
     Member myMember = new Member("Walter White");
-    assertEquals(true, myMember instanceof Task);
+    assertTrue(myMember instanceof Member);
   }
-  //
-  // @Test
-  // public void Member_instantiatesWithDescription_String() {
-  //   Member myMember = new Member("Walter White");
-  //   assertEquals("Daniel Loomb", myMember.getDescription());
-  // }
-  //
-  // @Test
-  // public void isDeleted_isFalseAfterInstantiation_false() {
-  //   Member myMember = new Member("Walter White");
-  //   assertEquals(false, myMember.isDeleted());
-  // }
-  //
-  // @Test
-  // public void all_returnsAllInstancesOfMember_true() {
-  //   Member firstMember = new Member("Walter White");
-  //   Member secondMember = new Member("Saul Goodman");
-  //   assertEquals(true, Member.all().contains(firstMember));
-  //   assertEquals(true, Member.all().contains(secondMember));
-  // }
-  //
-  // @Test
-  //   public void getId_membersInstantiateWithAnID_1() {
-  //     Member.clear();
-  //     Member myMember = new Member("Walter White");
-  //     assertEquals(1, myMember.getId());
-  //   }
-  //
-  // @Test
-  // public void find_returnsMemberWithSameId_secondMember() {
-  //   Member firstMember = new Member("Walter White");
-  //   Member secondMember = new Member("Saul Goodman");
-  //   assertEquals(Member.find(secondMember.getId()), secondMember);
-  // }
+
+  @Test
+  public void Member_instantiatesWithDescription() {
+    Member myMember = new Member("Walter White");
+    assertEquals("Walter White", myMember.getDescription());
+  }
+
+  @Test
+  public void Member_isCompletedEqualsFalseAfterInstantiation() {
+    Member myMember = new Member("Walter White");
+    assertFalse(myMember.isCompleted());
+  }
+
+  @Test
+  public void all_returnsAllInstancesOfMember_true() {
+    Member firstMember = new Member("Walter White");
+    Member secondMember = new Member("Saul Goodman");
+    assertTrue(Member.all().contains(firstMember));
+    assertTrue(Member.all().contains(secondMember));
+  }
+
+  @Test
+    public void getId_membersInstantiateWithAnID_1() {
+      Member.clear();
+      Member myMember = new Member("Walter White");
+      assertEquals(1, myMember.getId());
+    }
+
+  @Test
+  public void find_returnsMemberWithSameId_secondMember() {
+    Member firstMember = new Member("Walter White");
+    Member secondMember = new Member("Saul Goodman");
+    assertEquals(Member.find(secondMember.getId()), secondMember);
+  }
 }
